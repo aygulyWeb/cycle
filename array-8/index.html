@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array-8</title>
+</head>
+
+<body>
+	<script>
+		// 8) Требуется заполнить массив числами, которые вводит пользователь, и вычислить их сумму.
+		//  Если пользователь вводит ноль или превышен размер массива, то запросы на ввод должны прекратиться.
+
+
+		// function getRandom(min, max) {
+		// 	return Math.round(Math.random() * (max - min) + min);
+		// };
+
+		// var random, arr = [];
+
+		// var min = +prompt('Стартовое значение');
+
+		// var max = +prompt('Финишное значение');
+
+		// var step = +prompt('Введите шаг');
+
+
+		// for (var i = 0; i < step; i++) {
+		// 	random = getRandom(min, max);
+		// 	arr.push(random);
+
+
+		// };
+
+		// console.log(arr);
+
+		// var maxNum = arr[0], summ = 0;
+
+		// for (var i = 0; i < step; i++) {
+		// 	summ += arr[i];
+
+		// }
+
+		// console.log('Сумма чисел равна-' + summ);
+
+		var num, count = 0, arr = [];
+
+		var length = +prompt('Введите шаг: ')
+
+		while (true) {
+			num = +prompt('Введите число: ');
+			arr.push(num);
+			count++;
+
+			if (num == 0 || count >= length) break;
+		}
+
+		function sum(arr) {
+			var sum = 0;
+			for (var i = 0; i < arr.length; i++) {
+				sum += arr[i];
+			}
+			alert('Сумма равна: ' + sum);
+		}
+		sum(arr);
+
+	</script>
+
+</body>
+
+</html>

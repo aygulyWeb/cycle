@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array-9</title>
+</head>
+
+<body>
+	<script>
+		// 9) Дан массив из 50 элементов и лежат в диапазоне от -50 до 49 включительно.  
+		// Требуется из одного массива скопировать в другой массив значения в диапазоне от -5 до 5
+		//  включительно и подсчитать их количество.
+
+
+		function getRandom(min, max) {
+			return Math.round(Math.random() * (max - min) + min);
+		};
+
+		var random, arr = [];
+
+		var min = +prompt('Стартовое значение');
+
+		var max = +prompt('Финишное значение');
+
+		var step = +prompt('Введите шаг');
+
+
+		for (var i = 0; i < step; i++) {
+			random = getRandom(min, max);
+			arr.push(random);
+
+
+		};
+
+		console.log(arr);
+
+		var maxNum = arr[0], summ = 0;
+
+		for (var i = 0; i < step; i++) {
+			summ += arr[i];
+
+		}
+
+		console.log('Сумма чисел равна-' + summ);
+
+	</script>
+
+</body>
+
+</html>

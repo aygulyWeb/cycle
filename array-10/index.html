@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array-10</title>
+</head>
+
+<body>
+	<script>
+		// 10) В одномерном массиве (заполнение массива случайными числами от -50 до 49) 
+		// найти сумму отрицательных элементов. Если эта сумма меньше -100, то необходимо
+		// прибавить к ней минимальный положительный элемент.
+
+		// function random(min, max) {
+
+		// 	for (var i = 0; i < 5; i++) {
+		// 		var rand = min + Math.random() * (max - min + 1);
+		// 		return rand;
+		// 	}
+		// }
+
+		// console.log(Math.round(random(1, 36)))
+		// console.log(Math.round(random(1, 36)))
+		// console.log(Math.round(random(1, 36)))
+		// console.log(Math.round(random(1, 36)))
+
+		function random(min, max) {
+			var rand = min + Math.random() * (max - min);
+
+			return Math.round(rand);
+		}
+		console.log(random(1, 10))
+
+
+
+
+	</script>
+
+</body>
+
+</html>
