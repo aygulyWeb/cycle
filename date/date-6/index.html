@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>date-6</title>
+</head>
+
+<body>
+
+	<script>
+
+		// 6) Выведите на экран текущий день недели (словом, по-русски). 
+		// Создайте для этого вспомогательную функцию showDay, 
+		// которая параметром принимает число, а возвращает день недели по-русски
+
+		var now = new Date();
+		var week = (now.getDay() - 1);
+
+		var dayWeek = [
+			'Понедельник',
+			'Вторник',
+			'Среда',
+			'Четверг',
+			'Пятница',
+			'Суббота',
+			'Воскресенье'
+
+		];
+
+		alert(dayWeek[week]);
+
+
+
+
+
+	</script>
+
+</body>
+
+</html>
